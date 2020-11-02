@@ -11,6 +11,7 @@ router.post('/messaje', (req, res) => {
             <li>Option Page: ${req.body.page}</li>
         </ul>
     `;
+    //https://ethereal.email/create
     const transporter = nodemailer.createTransport({
         host: 'smtp.ethereal.email',
         port: 587,
