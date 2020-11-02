@@ -28,7 +28,7 @@ export default {
          `,
          isActive:true,
          isSecondImage:true,
-         secundImage:[require('../assets/imagen/back.png'),require('../assets/imagen/back1.png')],
+         secondImage:[require('../assets/imagen/back.png'),require('../assets/imagen/back1.png')],
       }
     }
   },

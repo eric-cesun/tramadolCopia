@@ -1,7 +1,7 @@
 <template>
     <div  style="text-align: -webkit-center;">
         <div class="tmortales">
-			<img  v-bind:src="info.image" alt="" height="50px">
+			<img class="image" v-bind:src="info.image" alt="" height="50px">
             <p v-if="!info.isActive">
 			{{info.text}}
             </p>
@@ -13,7 +13,7 @@
                 </p>
                 </div>
             </template>
-            <router-link to="/" ><img v-if="info.isSecondImage" v-bind:src="option ? info.secundImage[0]:info.secundImage[1]" alt="" @mouseover="option=false"
+            <router-link to="/" ><img v-if="info.isSecondImage" v-bind:src="option ? info.secondImage[0]:info.secondImage[1]" alt="" @mouseover="option=false"
       @mouseout="option=true" width="70px" ></router-link>
 		</div>
     </div>
@@ -44,6 +44,9 @@ props:{
 	color: #FFFFFF;
 	
 	
+}
+.image{
+    margin-bottom:20px;
 }
 .limittext{
     height: 220px;

@@ -13,18 +13,14 @@
         <b-nav-form>
           <b-nav-item to="/">Home</b-nav-item>
           <b-nav-item to="/about">About Us</b-nav-item>
-          <b-nav-item to="/about">Products</b-nav-item>
-          <b-nav-item to="/about">Contacts Us</b-nav-item>
+          <b-nav-item to="/products">Products</b-nav-item>
+          <b-nav-item to="/contact" >Contacts Us</b-nav-item>
         </b-nav-form>
 
       </b-navbar-nav>
     </b-collapse>
       </b-container>
   </b-navbar>
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
     <router-view/>
   </div>
 </template>

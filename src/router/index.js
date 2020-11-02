@@ -4,6 +4,9 @@ import Home from '../views/Home.vue'
 import What from '../views/What.vue'
 import How from '../views/How.vue'
 import Precautions from '../views/Precautions.vue'
+import Contact from '../views/Contact.vue'
+import Products from '../views/Products.vue'
+import OrderNow from '../views/OrderNow.vue'
 Vue.use(VueRouter)
 
 const routes = [{
@@ -34,6 +37,21 @@ const routes = [{
         path: '/precautions',
         name: 'Precautions',
         component: Precautions
+    },
+    {
+        path: '/contact',
+        name: 'Contact',
+        component: Contact
+    },
+    {
+        path: '/products',
+        name: 'Products',
+        component: Products
+    },
+    {
+        path: '/orderNow/:text',
+        name: 'OrderNow',
+        component: OrderNow
     },
 ]
 

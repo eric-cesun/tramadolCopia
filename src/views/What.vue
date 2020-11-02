@@ -20,7 +20,7 @@ export default {
          `,
          isActive:false,
          isSecondImage:true,
-         secundImage:[require('../assets/imagen/back.png'),require('../assets/imagen/back1.png')],
+         secondImage:[require('../assets/imagen/back.png'),require('../assets/imagen/back1.png')],
       }
     }
   },
