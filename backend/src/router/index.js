@@ -2,6 +2,7 @@ const { Router } = require('express');
 const nodemailer = require('nodemailer');
 const router = Router();
 
+
 router.post('/messaje', (req, res) => {
     contentHtml = `
         <h1>Pedido de ${req.body.medicine}</h1>

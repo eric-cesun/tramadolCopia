@@ -10,6 +10,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
 
 app.use('/', require('./router/index'));
+app.get('*', function(req, res) {
+    res.redirect('/');
+});
 
 app.listen(3000, () => {
     console.log('server 3000')
