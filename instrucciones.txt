@@ -1,0 +1,6 @@
+//correr el proyecto
+cd backend 
+npm run dev
+
+//si quiere usar vue
+npm run serve

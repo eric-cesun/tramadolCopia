@@ -12,7 +12,7 @@ Vue.use(VueAxios, Axios)
 Vue.use(IconsPlugin)
 Vue.config.productionTip = false
 Vue.prototype.http = Axios;
-
+Vue.prototype.api = 'http://localhost:3000';
 new Vue({
     router,
     render: h => h(App)

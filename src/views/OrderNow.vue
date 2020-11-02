@@ -54,7 +54,7 @@ export default {
 
             const infoP = {name:item[0].value,email:item[1].value,medicine:item[2].value,page:item[3].value};
                 this.http
-        .post("http://localhost:3000/messaje",JSON.stringify(infoP),{headers:{
+        .post(`${this.api}/messaje`,JSON.stringify(infoP),{headers:{
           'Accept':'application/json',
           'Content-type':'application/json'
         }})

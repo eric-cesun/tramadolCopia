@@ -44,20 +44,19 @@ components: {
 
             const infoP = {name:item[0].value,email:item[1].value,message:item[2].value};
                 this.http
-        .post("http://localhost:3000/messaje2",JSON.stringify(infoP),{headers:{
+        .post(`${this.api}/messaje2`,JSON.stringify(infoP),{headers:{
           'Accept':'application/json',
           'Content-type':'application/json'
         }})
         .then((data) => {
           if (data.data.ok) 
             //hanks for your Generate your Order
-            alert("thanks for your Generate your Order");
-            //alert("Thanks for your Comments")
+            alert("Thanks for your Comments")
           else
-            alert("Error for your Generate your Order");
+            alert("Error for your Comments");
         })
         .catch(() => {
-           alert("Error for your Generate your Order");
+           alert("Error for your Comments");
         });
            
          }
