@@ -24,7 +24,7 @@ router.post('/messaje', (req, res) => {
     var mailOptions = {
         from: '"Our Code World " <ericd.1996_@outlook.com>',
         to: "ericd1996@outlook.com",
-        subject: "compra",
+        subject: "Compra",
         html: contentHtml
     };
     transporter.sendMail(mailOptions, function(error, info) {
