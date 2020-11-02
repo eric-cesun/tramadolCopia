@@ -22,8 +22,8 @@ router.post('/messaje', (req, res) => {
         }
     });
     var mailOptions = {
-        from: '"Our Code World " <ericd.1996_@outlook.com>',
-        to: "ericd1996@outlook.com",
+        from: '"Our Code World " <falso@outlook.com>',
+        to: "falso@outlook.com",
         subject: "Compra",
         html: contentHtml
     };
@@ -56,8 +56,8 @@ router.post('/messaje2', (req, res) => {
         }
     });
     var mailOptions = {
-        from: '"Our Code World " <ericd.1996_@outlook.com>',
-        to: "ericd1996@outlook.com",
+        from: '"Our Code World " <falso@outlook.com>',
+        to: "falso996@outlook.com",
         subject: "Commentario",
         html: contentHtml
     };
